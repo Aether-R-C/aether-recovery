@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Recovery • Servicios Técnicos Profesionales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.04em;
+        }
+
+        .section-header {
+            font-size: 2.75rem;
+            line-height: 1.05;
+            font-weight: 600;
+            letter-spacing: -0.035em;
+        }
+
+        .premium-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-link {
+            transition: color 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #1e3a8a;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 999;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-zinc-200 sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8 py-6 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-[#1e3a8a] rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-infinity text-white text-2xl"></i>
+                </div>
+                <span class="font-semibold text-3xl tracking-[-1.5px]">Aether</span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#paquetes" class="nav-link">Paquetes</a>
+                <a href="#testimonios" class="nav-link">Testimonios</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+
+            <a href="https://wa.me/584123794814" target="_blank"
+               class="px-7 py-3 rounded-2xl bg-[#1e3a8a] hover:bg-[#1e40af] text-white text-sm font-semibold transition-colors flex items-center gap-x-2">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="max-w-screen-2xl mx-auto px-8 pt-20 pb-24">
+        <div class="max-w-4xl">
+            <h1 class="heading text-6xl md:text-7xl leading-none tracking-[-3.8px] mb-8">
+                Recuperamos lo que<br>
+                otros consideran perdido.
+            </h1>
+            
+            <p class="max-w-lg text-2xl text-zinc-600 mb-10">
+                Soluciones técnicas profesionales para recuperación de datos y optimización de equipos.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-10 py-4 rounded-3xl bg-[#1e3a8a] hover:bg-[#1e40af] text-white font-semibold text-lg transition-colors">
+                    Solicitar diagnóstico
+                </button>
+                
+                <a href="https://wa.me/584123794814" target="_blank"
+                   class="px-10 py-4 rounded-3xl border border-zinc-300 hover:bg-white font-semibold text-lg flex items-center justify-center gap-x-3 transition-colors">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Hablar por WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios" class="max-w-screen-2xl mx-auto px-8 py-20 border-t border-zinc-200 bg-white">
+        <div class="max-w-3xl mx-auto text-center mb-14">
+            <span class="text-[#1e3a8a] font-semibold tracking-[3px] text-sm">NUESTRA OFERTA</span>
+            <h2 class="section-header mt-4">Servicios profesionales</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-8">
+                <i class="fa-solid fa-exchange-alt text-4xl text-[#1e3a8a] mb-6"></i>
+                <h3 class="font-semibold text-2xl mb-3">Migración de Datos + Configuración</h3>
+                <p class="text-zinc-600">Transferimos archivos, programas y configuraciones de un equipo viejo a uno nuevo.</p>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-8">
+                <i class="fa-solid fa-hdd text-4xl text-[#1e3a8a] mb-6"></i>
+                <h3 class="font-semibold text-2xl mb-3">Upgrade a SSD</h3>
+                <p class="text-zinc-600">Cambio de disco duro por SSD de alta velocidad con instalación y optimización.</p>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-8">
+                <i class="fa-solid fa-tools text-4xl text-[#1e3a8a] mb-6"></i>
+                <h3 class="font-semibold text-2xl mb-3">Mantenimiento Preventivo</h3>
+                <p class="text-zinc-600">Limpieza profunda, cambio de pasta térmica y optimización completa del equipo.</p>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-8">
+                <i class="fa-solid fa-memory text-4xl text-[#1e3a8a] mb-6"></i>
+                <h3 class="font-semibold text-2xl mb-3">Volcado de Memoria (Memory Dump)</h3>
+                <p class="text-zinc-600">Extracción y análisis de memoria RAM para recuperación de información.</p>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-8">
+                <i class="fa-solid fa-key text-4xl text-[#1e3a8a] mb-6"></i>
+                <h3 class="font-semibold text-2xl mb-3">Recuperación de Contraseñas</h3>
+                <p class="text-zinc-600">Recuperación de contraseñas de Windows, archivos cifrados y programas.</p>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-8">
+                <i class="fa-solid fa-wallet text-4xl text-[#1e3a8a] mb-6"></i>
+                <h3 class="font-semibold text-2xl mb-3">Recuperación de Frases Semilla (Wallets)</h3>
+                <p class="text-zinc-600">Recuperación de acceso a wallets crypto cuando has perdido la frase semilla.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAQUETES -->
+    <section id="paquetes" class="max-w-screen-2xl mx-auto px-8 py-20 border-t border-zinc-200 bg-white">
+        <div class="max-w-3xl mx-auto text-center mb-14">
+            <span class="text-[#1e3a8a] font-semibold tracking-[3px] text-sm">MEJOR VALOR</span>
+            <h2 class="section-header mt-4">Soluciones Completas</h2>
+            <p class="text-zinc-600 mt-4 text-lg">Paquetes diseñados para ofrecerte el máximo valor a precios accesibles.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            
+            <!-- Paquete Esencial -->
+            <div class="premium-card border border-zinc-200 rounded-3xl p-8 flex flex-col">
+                <div>
+                    <h3 class="font-semibold text-2xl">Esencial</h3>
+                    <div class="mt-4 flex items-baseline">
+                        <span class="text-5xl font-semibold">$65</span>
+                    </div>
+                </div>
+                
+                <ul class="mt-8 space-y-3 text-sm flex-1">
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Migración completa de datos</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Upgrade a SSD + instalación</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Limpieza física del equipo</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Cambio de pasta térmica</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Limpieza de conectores</li>
+                </ul>
+                
+                <a href="https://wa.me/584123794814?text=Hola%2C%20estoy%20interesado%20en%20el%20Paquete%20Esencial%20(%2465).%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n." 
+                   target="_blank"
+                   class="mt-8 w-full py-3.5 rounded-2xl border border-zinc-300 hover:bg-zinc-100 font-semibold transition-colors text-center">
+                    Elegir este paquete
+                </a>
+            </div>
+
+            <!-- Paquete Recomendado -->
+            <div class="premium-card border-2 border-[#1e3a8a] rounded-3xl p-8 flex flex-col relative">
+                <div class="absolute -top-3 right-6 bg-[#1e3a8a] text-white text-xs font-bold px-4 py-1 rounded-full">MÁS ELEGIDO</div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl">Recomendado</h3>
+                    <div class="mt-4 flex items-baseline">
+                        <span class="text-5xl font-semibold">$119</span>
+                        <span class="ml-2 text-sm line-through text-zinc-400">$165</span>
+                    </div>
+                    <p class="text-sm text-emerald-600 font-medium">Ahorras $46</p>
+                </div>
+                
+                <ul class="mt-8 space-y-3 text-sm flex-1">
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Todo lo del Paquete Esencial</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Configuración de Backups automáticos</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Limpieza profunda de software</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Revisión del estado del hardware</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Soporte prioritario por 15 días</li>
+                </ul>
+                
+                <a href="https://wa.me/584123794814?text=Hola%2C%20estoy%20interesado%20en%20el%20Paquete%20Recomendado%20(%24119).%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n." 
+                   target="_blank"
+                   class="mt-8 w-full py-3.5 rounded-2xl bg-[#1e3a8a] hover:bg-[#1e40af] text-white font-semibold transition-colors text-center">
+                    Elegir paquete recomendado
+                </a>
+            </div>
+
+            <!-- Paquete Premium -->
+            <div class="premium-card border border-zinc-200 rounded-3xl p-8 flex flex-col">
+                <div>
+                    <h3 class="font-semibold text-2xl">Premium</h3>
+                    <div class="mt-4 flex items-baseline">
+                        <span class="text-5xl font-semibold">$169</span>
+                        <span class="ml-2 text-sm line-through text-zinc-400">$230</span>
+                    </div>
+                    <p class="text-sm text-emerald-600 font-medium">Ahorras $61</p>
+                </div>
+                
+                <ul class="mt-8 space-y-3 text-sm flex-1">
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Todo lo del Paquete Recomendado</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Mantenimiento Preventivo completo</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Instalación de componente adicional</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Soporte prioritario por 30 días</li>
+                    <li class="flex gap-x-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> Informe técnico detallado</li>
+                </ul>
+                
+                <a href="https://wa.me/584123794814?text=Hola%2C%20estoy%20interesado%20en%20el%20Paquete%20Premium%20(%24169).%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n." 
+                   target="_blank"
+                   class="mt-8 w-full py-3.5 rounded-2xl border border-zinc-300 hover:bg-zinc-100 font-semibold transition-colors text-center">
+                    Elegir paquete premium
+                </a>
+            </div>
+
+            <!-- Paquete Personalizado -->
+            <div class="premium-card border border-zinc-300 rounded-3xl p-8 flex flex-col bg-zinc-50">
+                <div>
+                    <h3 class="font-semibold text-2xl">A tu medida</h3>
+                    <div class="mt-4">
+                        <span class="text-3xl font-semibold">Cotización personalizada</span>
+                    </div>
+                </div>
+                
+                <div class="mt-8 flex-1">
+                    <p class="text-zinc-600 text-sm">¿Necesitas una combinación específica? Dinos qué servicios requieres y te preparamos una cotización a tu medida.</p>
+                </div>
+                
+                <button onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })" 
+                        class="mt-8 w-full py-3.5 rounded-2xl border border-[#1e3a8a] text-[#1e3a8a] hover:bg-[#1e3a8a] hover:text-white font-semibold transition-colors">
+                    Crear mi paquete
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="max-w-screen-2xl mx-auto px-8 py-20 border-t border-zinc-200">
+        <div class="mb-14">
+            <span class="text-[#1e3a8a] font-semibold tracking-[3px] text-sm">CONFIANZA REAL</span>
+            <h2 class="section-header mt-4">Lo que dicen nuestros clientes</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-9">
+                <div class="flex text-amber-500 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[15px] leading-relaxed">"Aether recuperó el 100% de mis archivos después de un ransomware. Su profesionalismo y resultados fueron excepcionales."</p>
+                <div class="mt-8 pt-6 border-t border-zinc-100">
+                    <div class="font-semibold">Laura Mendoza</div>
+                    <div class="text-sm text-zinc-500">Directora de Marketing • Caracas</div>
+                </div>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-9">
+                <div class="flex text-amber-500 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[15px] leading-relaxed">"Tenía un RAID fallando con datos críticos de mi empresa. Lograron recuperar todo lo que otros técnicos consideraron perdido."</p>
+                <div class="mt-8 pt-6 border-t border-zinc-100">
+                    <div class="font-semibold">Roberto Vargas</div>
+                    <div class="text-sm text-zinc-500">Empresario • Valencia</div>
+                </div>
+            </div>
+
+            <div class="premium-card bg-white border border-zinc-200 rounded-3xl p-9">
+                <div class="flex text-amber-500 mb-6">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-[15px] leading-relaxed">"Mi laptop se apagaba constantemente. Después del mantenimiento y upgrade a SSD, funciona mejor que cuando la compré."</p>
+                <div class="mt-8 pt-6 border-t border-zinc-100">
+                    <div class="font-semibold">Isabella Torres</div>
+                    <div class="text-sm text-zinc-500">Arquitecta • Maracaibo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-screen-2xl mx-auto px-8 py-20 border-t border-zinc-200 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header mb-12 text-center">Preguntas frecuentes</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-zinc-200 rounded-3xl px-8 py-6">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-semibold text-lg">
+                        ¿Pueden recuperar datos de un disco que ya no enciende?
+                        <i class="fa-solid fa-chevron-down transition-transform text-xl ml-4"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-zinc-600 pr-6">
+                        Sí. En muchos casos de fallos físicos podemos trabajar en laboratorio con técnicas avanzadas.
+                    </div>
+                </div>
+
+                <div class="border border-zinc-200 rounded-3xl px-8 py-6">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-semibold text-lg">
+                        ¿Cuánto tiempo toma el servicio?
+                        <i class="fa-solid fa-chevron-down transition-transform text-xl ml-4"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-zinc-600 pr-6">
+                        La mayoría de limpiezas y restauraciones se entregan en 24-72 horas. Los casos de recuperación de datos pueden tomar entre 1 y 5 días.
+                    </div>
+                </div>
+
+                <div class="border border-zinc-200 rounded-3xl px-8 py-6">
+                    <button onclick="toggleFAQ(this)" class="w-full flex justify-between items-center text-left font-semibold text-lg">
+                        ¿Mis datos están seguros?
+                        <i class="fa-solid fa-chevron-down transition-transform text-xl ml-4"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-zinc-600 pr-6">
+                        Totalmente. Firmamos acuerdo de confidencialidad y eliminamos toda información una vez entregado el equipo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="max-w-screen-2xl mx-auto px-8 py-20 border-t border-zinc-200">
+        <div class="max-w-xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="section-header tracking-[-1.5px]">¿Necesitas ayuda con tu equipo?</h2>
+                <p class="text-zinc-600 mt-4 text-lg">Completa el formulario y te contactaremos en menos de 4 horas.</p>
+            </div>
+
+            <!-- FORMULARIO CON TU FORMSPREE -->
+            <form action="https://formspree.io/f/mzdqgvyj" method="POST" class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <input type="text" name="nombre" placeholder="Nombre completo" required class="w-full border border-zinc-300 focus:border-[#1e3a8a] rounded-2xl px-6 py-4 text-sm">
+                    <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp" required class="w-full border border-zinc-300 focus:border-[#1e3a8a] rounded-2xl px-6 py-4 text-sm">
+                </div>
+                <input type="email" name="email" placeholder="Correo electrónico" required class="w-full border border-zinc-300 focus:border-[#1e3a8a] rounded-2xl px-6 py-4 text-sm">
+                <textarea name="mensaje" rows="6" placeholder="Describe el problema de tu equipo..." required class="w-full border border-zinc-300 focus:border-[#1e3a8a] rounded-3xl px-6 py-4 text-sm"></textarea>
+
+                <button type="submit" class="w-full py-4 rounded-3xl bg-[#1e3a8a] hover:bg-[#1e40af] text-white font-semibold text-lg transition-colors">
+                    Enviar solicitud
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/584123794814?text=Hola%2C%20vi%20su%20página%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" 
+       target="_blank"
+       class="whatsapp-float flex items-center justify-center w-16 h-16 bg-emerald-600 hover:bg-emerald-500 text-white rounded-full text-4xl shadow-2xl">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('fa-rotate-180');
+        }
+    </script>
+</body>
+</html>
